@@ -1,0 +1,80 @@
+/* 언어 선택 버튼 */
+
+.btn-lan {
+    display: inline;
+    position: relative;
+}
+
+#sel-lan {
+    padding: 8px 15px;
+    background: rgba(0, 0, 0, .4);
+    border: 1 px solid #aaa;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#sel-lan option {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.btn-lan::before {
+    content: '';
+    background: url(./img/globe-solid.svg);
+    width: 13px;
+    height: 14px;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+}
+
+.btn-lan::after {
+    content: '';
+    background: url(./img/caret-down-solid.svg) no-repeat;
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    top: -9px;
+    right: 2px;
+}
+
+/* 로그인 버튼 */
+.btn-login {
+    display: block;
+    width: 75px;
+    height: 35px;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+
+/* 멤버십 등록란 */
+.ready {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 19px;
+    line-height: 21px;
+}
+.cont-member {
+    text-align: center;
+}
+#member {
+    width: 565px;
+    height: 60px;
+    position: relative;
+    box-sizing: border-box;
+}
+.cont-member .btn-str {
+    position: absolute;
+    right: 185px;
+    width: 170px;
+    height: 60px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 26px;
+}
