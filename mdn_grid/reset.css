@@ -50,7 +50,7 @@ img {
 	display: block;
 	width: 100%;
 }
-.blind {
+.hidden-txt {
 	position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -58,6 +58,6 @@ img {
     margin: -1px;
     overflow: hidden;
 }
-a {
+a, li{
 	text-decoration: none;
 }
