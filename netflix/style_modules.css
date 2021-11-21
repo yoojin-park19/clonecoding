@@ -90,7 +90,7 @@
 
 /*  qna 버튼 */
 .cont-qna .list-qna li {
-    max-width: 814px;
+    width: 100%; 
     margin-bottom: 20px;
 }
 .checkbox {

@@ -103,10 +103,10 @@
 
 /* section: cont-qna */
 .cont-qna {
-    padding: 70px 300px 80px;
     background-color: #000;
     text-align: center;
     border-bottom: 8px solid #222;
+    padding: 50px 0;
 }
 .cont-qna h3 {
     font-weight: 700;
@@ -114,10 +114,12 @@
     margin-bottom: 50px;
 }
 .cont-qna .list-qna {
-    margin-bottom: 60px;
+    width: 75%;
+    max-width: 815px;
+    margin: 10px auto 70px;
 }
 .cont-qna .txt-ready {
-    margin-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 /* footer */
