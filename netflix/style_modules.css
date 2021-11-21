@@ -1,0 +1,132 @@
+/* 언어 선택 버튼 */
+
+.btn-lan {
+    position: relative;
+}
+
+.btn-sel {
+    padding: 8px 15px;
+    background: rgba(0, 0, 0, .2);
+    border: 1 px solid #aaa;
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.btn-sel option {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.btn-lan::before {
+    content: '';
+    background: url(./img/globe-solid.svg);
+    width: 13px;
+    height: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.btn-lan::after {
+    content: '';
+    background: url(./img/caret-down-solid.svg) no-repeat;
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 3px;
+}
+
+/* 로그인 버튼 */
+.btn-login {
+    display: block;
+    width: 75px;
+    height: 35px;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+
+/* 멤버십 등록란 */
+
+.cont-member {
+    font-size: 19px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+}
+.cont-member input {
+    min-width: 450px; 
+    line-height: 60px;
+    font-size: 20px;
+}
+.cont-member .btn-str {
+    padding: 3px 0 3px 10px;
+    min-width: 120px;
+    height: 65px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 26px;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-member .btn-str::after {
+    display: block;
+    content: '';
+	background: url(./img/angle-right-solid.svg) no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 4px;
+}
+
+
+/*  qna 버튼 */
+.cont-qna .list-qna li {
+    max-width: 814px;
+    margin-bottom: 20px;
+}
+.checkbox {
+    display: none; 
+}
+.title {
+    display: block;
+    padding: 35px 40px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    background: #303030;
+    text-align: left;
+    font-weight: bold;
+    position: relative;
+}
+.title::after {
+    display: block;
+    content: '';
+    background: url(./img/plus-solid.svg) no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+.desc {
+    max-height: 0px;
+    overflow: hidden;
+    font-size: 26px;
+    background: #303030;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+}
+.checkbox:checked  + .title + .desc {
+    max-height: 1000px;
+    padding: 30px;
+}

@@ -1,0 +1,152 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* header */
+.cont-tit {
+    background-image: url(./img/img/KR-ko-20211115-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    height: 700px;
+    display: relative;
+    z-index: -2;
+}
+.cont-tit::before {
+    display: block;
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    height: 700px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.cont-tit .login {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 50px;
+    position: relative;
+}
+.cont-tit .tit-logo {
+    width: 140px;
+    height: 70px;
+    background:transparent;
+}
+.sel-lang-login {
+    display: flex;
+    gap: 30px;
+}
+.cont-tit .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 170px;
+}
+.cont-tit .intro h2 {
+    font-weight: 700;
+    font-size: 50px;
+    width: 400px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cont-tit .intro .txt-intro {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.cont-tit .intro .txt-ready {
+    font-size: 19px;
+    margin-bottom: 23px;
+}
+
+/* section1 : cont-txt */
+.cont-txt {
+    background-color: #000;
+    color: #fff;
+}
+.cont-txt .list-txt li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 8px solid #222;
+    padding: 100px 0;
+}
+.cont-txt .list-txt li:first-child {
+    border-top: 8px solid #222;;
+}
+.cont-txt .list-txt .txt-box {
+    width: 520px;
+    height: 180px;
+    margin: 0 80px;
+}
+.cont-txt .list-txt h3 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.cont-txt .list-txt .txt-box p {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+
+.cont-txt .list-txt img {
+    width: 530px;
+    height: 320px;
+}
+
+/* section: cont-qna */
+.cont-qna {
+    padding: 70px 300px 80px;
+    background-color: #000;
+    text-align: center;
+    border-bottom: 8px solid #222;
+}
+.cont-qna h3 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.cont-qna .list-qna {
+    margin-bottom: 60px;
+}
+.cont-qna .txt-ready {
+    margin-bottom: 10px;
+}
+
+/* footer */
+.footer {
+    background-color: #000;
+    padding: 70px 250px;
+}
+.footer .call{
+    color:#757575;
+    display: flex;
+}
+.footer  a, .footer p, .footer dt, .footer dd{
+    color:#757575;
+}
+.footer .list-question {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+    font-size: 13px;
+}
+.footer .btn-lan {
+    margin-bottom: 30px;
+    border: 1px solid #757575;
+}
+.footer .name-company {
+    font-size: 13px;
+    padding: 20px 0;
+}
+.footer dt, .footer dd {
+    font-size: 13px;
+}
