@@ -11,13 +11,13 @@
 </head>
 <body>
     <!-- 언어 선택 버튼 -->
-    <div class="btn-lan">
+    <button class="btn-lan">
         <label for="sel-lan" class="hidden-txt">언어선택</label>
-        <select id="sel-lan">
+        <select id="sel-lan" class="btn-sel">
         <option value="한국어" selected>한국어</option>
         <option value="English">English</option>
         </select>
-    </div>
+    </button>
 <br>
 <br>
 <br>
@@ -28,11 +28,31 @@
 <br>
 <br>
 <!-- 멤버십 등록 란 -->
-    <p class="ready">시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>
     <form action="submit" class="cont-member">
-        <label for="member"></label>
+        <label for="member" class="hidden-txt">이메일 입력</label>
         <input type="text" placeholder="이메일 주소" id="member">
-        <button class="btn-str">시작하기 ></button>
+        <button class="btn-str">시작하기</button>
     </form>
+<br>
+<br>
+<!-- 질문 펼쳐지는 답 -->
+<section class="cont-qna">
+    <ul class="list-qna">
+        <li>
+            <input type="checkbox" class="checkbox" id="expandable-input1"/>
+            <label for="expandable-input1" class="title">넷플릭스란 무엇인가요</label>
+            <p class="desc"> 
+                넷플릭스는 각종 수상경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천종의 디바이스에서 시청할 수 있는 스트리밍 서비스
+                입니다.<br>저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV프로그램과 영화가 제공됩니다.
+            </p>
+        </li>
+        <li>
+            <input type="checkbox" class="checkbox" id="expandable-input2"/>
+            <label for="expandable-input2" class="title">넷플릭스란 무엇인가요</label>
+            <p class="desc"> 
+                넷플릭스는 각종 수상경력에 빛나는 TV 프로그램, 영화, 애니메이션, 다큐멘터리 등 다양한 콘텐츠를 인터넷 연결이 가능한 수천종의 디바이스에서 시청할 수 있는 스트리밍 서비스
+                입니다.<br>저렴한 월 요금으로 일체의 광고 없이 원하는 시간에 원하는 만큼 즐길 수 있습니다. 무궁무진한 콘텐츠가 준비되어 있으며 매주 새로운 TV프로그램과 영화가 제공됩니다.
+            </p>
+        </li>
 </body>
 </html>

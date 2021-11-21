@@ -61,3 +61,7 @@ img {
 a {
 	text-decoration: none;
 }
+
+button{
+	all: unset;
+}
