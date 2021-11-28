@@ -102,6 +102,10 @@
         font-weight: 300;
         text-align: center;
     }
+    .cont-tit .intro .btn-str {
+        font-size: 16px;
+        height: 50px;
+    }
     .cont-txt .list-txt {
         margin: 0 10px;
     }
@@ -136,6 +140,10 @@
     }
     .cont-qna .txt-ready {
         padding: 0 5px;
+    }
+    .cont-qna .cont-member .btn-str {
+        font-size: 16px;
+        height: 50px;
     }
 }
 
