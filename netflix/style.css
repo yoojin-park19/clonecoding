@@ -1,3 +1,144 @@
+@media screen and (max-width: 965px) {
+    .cont-member {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont-member input {
+        display: block;
+        min-width: 300px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .cont-member .btn-str {
+        font-size: 20px;
+        width: 40px;
+    }
+    .cont-txt .list-txt li {
+        flex-direction: column;
+    }
+    .cont-txt .list-txt .txt-box h3 {
+        text-align: center;
+    }
+    .cont-txt .list-txt .txt-box p{
+        text-align: center;
+    }
+    .cont-txt .list-txt  img {
+        margin-top: 72px;
+    }
+    .cont-txt .list-txt li:nth-child(2) img {
+        position: relative;
+        order: 1
+    }
+    .cont-txt .list-txt li:nth-child(4) img {
+        position: relative;
+        order: 1
+    }
+    .cont-qna .cont-member {
+        height: 100%;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .footer {
+        padding: 10px 10px;
+    }
+    .footer .list-question {
+        grid-template-columns: 1fr, 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .cont-tit .login .tit-logo {
+        height: 22px;
+        width: 88px;
+        margin-right: 80px;
+    }
+    .cont-tit .login .btn-sel {
+        height: 34px;
+        width: 85px;
+    }
+    .cont-tit .login .btn-login {
+        width: 50px;
+        height: 35px;
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    .btn-lan::before {
+        content: '';
+        background: url(./img/globe-solid.svg);
+        width: 13px;
+        height: 14px;
+        position: absolute;
+        top: 10px;
+        left: 5px;
+    }
+    .btn-lan::after {
+        content: '';
+        background: url(./img/caret-down-solid.svg) no-repeat;
+        width: 22px;
+        height: 40px;
+        position: absolute;
+        top: -1px;
+        right: 2px;
+    }
+    .login .sel-lang-login {
+        gap: 0px;
+    }
+    .cont-tit .intro {
+        padding: 0 10px;
+
+    }
+    .cont-tit .intro h2{
+        font-size: 26px;
+        font-weight: 400;
+    }
+    .cont-tit .intro .txt-intro {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 300;
+    }
+    .cont-tit .intro .txt-ready {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .cont-txt .list-txt {
+        margin: 0 10px;
+    }
+    .cont-txt .list-txt li {
+        width: 100%;
+    }
+    .cont-txt .list-txt .txt-box h3 {
+        font-size: 26px;
+        font-weight: 700;
+    } 
+    .cont-txt .list-txt .txt-box p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .cont-txt .list-txt .txt-box {
+        width: 100%;
+    }
+    .cont-qna .list-qna .title {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px;
+    }
+    .cont-qna .list-qna {
+        margin: 10px 0;
+    }
+    .cont-qna .list-qna .title::after {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 15px;
+        right: 5px;
+    }
+    .cont-qna .txt-ready {
+        padding: 0 5px;
+    }
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -21,40 +162,42 @@
     right: 0;
     bottom: 0;
     left: 0;
+    box-shadow: inset 0 10px 70px #111;
 }
-.cont-tit .login {
+.login {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 50px;
+    padding:20px;
     position: relative;
 }
 .cont-tit .tit-logo {
     width: 140px;
-    height: 70px;
+    height: 40px;
     background:transparent;
 }
 .sel-lang-login {
     display: flex;
     gap: 30px;
 }
-.cont-tit .intro {
+.intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 170px;
+    margin-top: 20%;
+    color: #fff;
 }
-.cont-tit .intro h2 {
+.intro h2 {
     font-weight: 700;
     font-size: 50px;
     width: 400px;
     text-align: center;
     margin-bottom: 30px;
 }
-.cont-tit .intro .txt-intro {
+.intro .txt-intro {
     font-size: 26px;
     margin-bottom: 30px;
 }
@@ -70,7 +213,6 @@
 }
 .cont-txt .list-txt li {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     border-bottom: 8px solid #222;
@@ -79,53 +221,56 @@
 .cont-txt .list-txt li:first-child {
     border-top: 8px solid #222;;
 }
-.cont-txt .list-txt .txt-box {
-    width: 520px;
-    height: 180px;
+.list-txt .txt-box {
+    flex-basis: 1;
     margin: 0 80px;
 }
 .cont-txt .list-txt h3 {
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 30px;
-    line-height: 1.5;
+    line-height: 1.2;
 }
-.cont-txt .list-txt .txt-box p {
+.list-txt .txt-box p {
     font-size: 26px;
     line-height: 30px;
 }
 
-
 .cont-txt .list-txt img {
-    width: 530px;
-    height: 320px;
+    flex-basis: 1;
 }
-
 /* section: cont-qna */
 .cont-qna {
     background-color: #000;
     text-align: center;
     border-bottom: 8px solid #222;
-    padding: 50px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .cont-qna h3 {
     font-weight: 700;
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    color: #fff;
 }
 .cont-qna .list-qna {
     width: 75%;
     max-width: 815px;
-    margin: 10px auto 70px;
+    margin: 10px 40px 20px;
 }
 .cont-qna .txt-ready {
-    padding-bottom: 30px;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
 }
 
 /* footer */
 .footer {
     background-color: #000;
-    padding: 70px 250px;
+    padding: 50px 70px;
 }
 .footer .call{
     color:#757575;
