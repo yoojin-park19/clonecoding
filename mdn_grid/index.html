@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>MDN-clon cording</title>
 </head>
@@ -15,8 +15,8 @@
 <body>
     <header class="header">
         <nav class="cont-menu">
-            <a href="https://developer.mozilla.org/ko/" class="mdn-logo"></a>
-            <button class="btn-open"><img src="./img/bars-solid.svg" alt=""></button>  
+            <a href="https://developer.mozilla.org/ko/"><img src="./img/MDN_Web_Docs.svg" alt="mdn"
+                    class="mdn-logo"></a>
             <ul class="nav-menu">
                 <li><a href="#" class="decs">Technologies</a></li>
                 <li><a href="#">References & Guides</a></li>
@@ -27,7 +27,6 @@
                 <input type="text" placeholder="site search...(Press '/'to focus)" class="txt-search">
                 <button type="submit" class="btn-search"><img src="./img/search.svg" alt="search"></button>
             </form>
-            
         </nav>
         <section class="cont-header">
             <h1>Resources for developers, by developers.</h1>
@@ -38,100 +37,122 @@
             </ul>
         </section>
     </header>
-    <section class="mdn-blog">
-        <h2 class="tit-blog">Hack's blog</h2>
-        <a href="#" class="readmore">Read more at hacks.mozilla.org</a>
-        <ul class="txt-blog">
-            <li>
-                <h3>Hacks Decoded: Thomas Park, Founder of Codepip</h3>
-                <p>
-                    Welcome to our Hacks: Decoded Interview series! We spoke with Thomas Park over email about coding,
-                    his favourite apps and his past life at Mozilla. Thomas is the founder of Codepip, a platform he
-                    created for coding games that helps people learn HTML, CSS, JavaScript, etc. The most popular game
-                    is Flexbox Froggy.The post Hacks Decoded: Thomas Park, Founder of Codepip appeared first on Mozilla
-                    Hacks - the Web developer blog.</p>
-                <p class="posted">Posted Wednesday, October 20, 2021 by Xavier Harding</p>
-            </li>
-            <li>
-                <h3>Lots to see in Firefox 93!</h3>
-                <p>Firefox 93 comes with lots of lovely updates including AVIF image format support, filling of
-                    XFA-based forms in its PDF viewer and protection against insecure downloads by blocking downloads
-                    relying on insecure connections.The post Lots to see in Firefox 93! appeared first on Mozilla Hacks
-                    - the Web developer blog.</p>
-                <p class="posted">Posted Friday, October 8, 2021 by Ruth John</p>
-            </li>
-            <li>
-                <h3>Implementing form filling and accessibility in the Firefox PDF viewer</h3>
-                <p>Last year, during lockdown, many discovered the importance of PDF forms when having to deal remotely
-                    with administrations and large organizations like banks. Firefox supported displaying PDF forms, but
-                    it didn’t support filling them: users had to print them, fill them by hand, and scan them back to
-                    digital form. We decided it was time to reinvest in the PDF viewer (PDF.js) and support filling PDF
-                    forms within Firefox to make our users' lives easier.The post Implementing form filling and
-                    accessibility in the Firefox PDF viewer appeared first on Mozilla Hacks - the Web developer blog.
-                </p>
-                <p class="posted">Posted Thursday, October 7, 2021 by bdahl</p>
-            </li>
-            <li>
-                <h3>Control your data for good with Rally</h3>
-                <p>In a world where data and AI are reshaping society, people currently have no tangible way to put
-                    their data to work for the causes they believe in. To address this, we built the Rally platform, a
-                    first-of-its-kind tool that enables you to contribute your data to specific studies and exercise
-                    consent at a granular level. Mozilla Rally puts you in control of your data while building a better
-                    Internet and a better society. The post Control your data for good with Rally appeared first on
-                    Mozilla Hacks - the Web developer blog</p>
-                <p class="posted">Posted Wednesday, October 6, 2021 by Melissa Thermidor</p>
-            </li>
-            <li>
-                <h3>Tab Unloading in Firefox 93</h3>
-                <p>Starting with Firefox 93, Firefox will monitor available system memory and, should it ever become so
-                    critically low that a crash is imminent, Firefox will respond by unloading memory-heavy but not
-                    actively used tabs. This feature is currently enabled on Windows and will be deployed later for
-                    macOS and Linux as well.The post Tab Unloading in Firefox 93 appeared first on Mozilla Hacks - the
-                    Web developer blog.
-                </p>
-                <p class="posted">Posted Tuesday, October 5, 2021 by Haik Aftandilian</p>
-            </li>
-        </ul>
-    </section>
-    <article class="cont-art">
-        <h2 class="tit-art">Help improve MDN Web Docs</h2>
-        <p>All parts of MDN (docs and the site itself) are created by an open community of developers. Please join us!
-            Pick one of these ways to help:
-        </p>
-        <ul class="art-menu">
-            <li><a href="">Getting started</a></li>
-            <li><a href="">Contributing to MDN content</a></li>
-            <li><a href="">Contributing to the MDN codebase</a></li>
-            <li><a href="">Updating browser compatibility data</a></li>
-        </ul>
-    </article>
-
+    <main class="main">
+        <section class="mdn-blog">
+            <h2 class="tit-blog">Hack's blog</h2>
+            <a href="#" class="readmore">Read more at hacks.mozilla.org</a>
+            <ul class="txt-blog">
+                <li>
+                    <h3>Hacks Decoded: Thomas Park, Founder of Codepip</h3>
+                    <p>
+                        Welcome to our Hacks: Decoded Interview series! We spoke with Thomas Park over email about
+                        coding,
+                        his favourite apps and his past life at Mozilla. Thomas is the founder of Codepip, a platform he
+                        created for coding games that helps people learn HTML, CSS, JavaScript, etc. The most popular
+                        game
+                        is Flexbox Froggy.The post Hacks Decoded: Thomas Park, Founder of Codepip appeared first on
+                        Mozilla
+                        Hacks - the Web developer blog.</p>
+                    <p class="posted">Posted Wednesday, October 20, 2021 by Xavier Harding</p>
+                </li>
+                <li>
+                    <h3>Lots to see in Firefox 93!</h3>
+                    <p>Firefox 93 comes with lots of lovely updates including AVIF image format support, filling of
+                        XFA-based forms in its PDF viewer and protection against insecure downloads by blocking
+                        downloads
+                        relying on insecure connections.The post Lots to see in Firefox 93! appeared first on Mozilla
+                        Hacks
+                        - the Web developer blog.</p>
+                    <p class="posted">Posted Friday, October 8, 2021 by Ruth John</p>
+                </li>
+                <li>
+                    <h3>Implementing form filling and accessibility in the Firefox PDF viewer</h3>
+                    <p>Last year, during lockdown, many discovered the importance of PDF forms when having to deal
+                        remotely
+                        with administrations and large organizations like banks. Firefox supported displaying PDF forms,
+                        but
+                        it didn’t support filling them: users had to print them, fill them by hand, and scan them back
+                        to
+                        digital form. We decided it was time to reinvest in the PDF viewer (PDF.js) and support filling
+                        PDF
+                        forms within Firefox to make our users' lives easier.The post Implementing form filling and
+                        accessibility in the Firefox PDF viewer appeared first on Mozilla Hacks - the Web developer
+                        blog.
+                    </p>
+                    <p class="posted">Posted Thursday, October 7, 2021 by bdahl</p>
+                </li>
+                <li>
+                    <h3>Control your data for good with Rally</h3>
+                    <p>In a world where data and AI are reshaping society, people currently have no tangible way to put
+                        their data to work for the causes they believe in. To address this, we built the Rally platform,
+                        a
+                        first-of-its-kind tool that enables you to contribute your data to specific studies and exercise
+                        consent at a granular level. Mozilla Rally puts you in control of your data while building a
+                        better
+                        Internet and a better society. The post Control your data for good with Rally appeared first on
+                        Mozilla Hacks - the Web developer blog</p>
+                    <p class="posted">Posted Wednesday, October 6, 2021 by Melissa Thermidor</p>
+                </li>
+                <li>
+                    <h3>Tab Unloading in Firefox 93</h3>
+                    <p>Starting with Firefox 93, Firefox will monitor available system memory and, should it ever become
+                        so
+                        critically low that a crash is imminent, Firefox will respond by unloading memory-heavy but not
+                        actively used tabs. This feature is currently enabled on Windows and will be deployed later for
+                        macOS and Linux as well.The post Tab Unloading in Firefox 93 appeared first on Mozilla Hacks -
+                        the
+                        Web developer blog.
+                    </p>
+                    <p class="posted">Posted Tuesday, October 5, 2021 by Haik Aftandilian</p>
+                </li>
+            </ul>
+        </section>
+        <article class="cont-art">
+            <h2 class="tit-art">Help improve MDN Web Docs</h2>
+            <p>All parts of MDN (docs and the site itself) are created by an open community of developers. Please join
+                us!
+                Pick one of these ways to help:
+            </p>
+            <ul class="art-menu">
+                <li><a href="">Getting started</a></li>
+                <li><a href="">Contributing to MDN content</a></li>
+                <li><a href="">Contributing to the MDN codebase</a></li>
+                <li><a href="">Updating browser compatibility data</a></li>
+            </ul>
+        </article>
+    </main>
     <footer>
         <section class="footer-section">
             <h2 class="blind">information of mdn</h2>
             <ul class="cont-left">
-                <li><a href="#"><img src="img/logo.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/logo.svg" alt="logo" class="footer-logo" ></a></li>
                 <li><a href="#">Web Technologies</a></li>
                 <li><a href="#">Learn Web Deveelopment</a></li>
                 <li><a href="#">About MDN</a></li>
                 <li><a href="#">Feedback</a></li>
+                <li>
+                    <ul class="mdn-sns">
+                        <li>MDN</li>
+                        <li><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
+                        <li><a href="#"><img src="./img/gitHub.svg" alt="github"></a></li>
+                    </ul>
+                </li>
             </ul>
-            <ul class="mdn-sns">
-                <li>MDN</li>
-                <li><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
-                <li><a href="#"><img src="./img/gitHub.svg" alt="github"></a></li>
-            </ul>
+            
             <ul class="cont-right">
                 <li><a href="#">About</a></li>
                 <li><a href="#">MDN Web Docs Store</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Firefox</a></li>
+                <li>
+                    <ul class="mozila-sns">
+                        <li>Mozilla</li>
+                        <li><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
+                        <li><a href="#"><img src="./img/instagram.445373fc.svg" alt="instgram"></a></li>
+                    </ul>
+                </li>
             </ul>
-            <ul class="mozila-sns">
-                <li>Mozilla</li>
-                <li><a href="#"><img src="./img/twitter.svg" alt="twitter"></a></li>
-                <li><a href="#"><img src="./img/instagram.445373fc.svg" alt="instgram"></a></li>
-            </ul>
+            
         </section>
         <section class="term">
             <h2 class="blind">term and condition></h2>

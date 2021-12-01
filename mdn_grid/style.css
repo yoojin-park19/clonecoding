@@ -1,69 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
 
-@media screen and (max-width: 1190px) {
-    .cont-menu .nav-menu {
-        justify-content: space-between;
-    }
-    .cont-menu .find-menu {
-        min-width: 60px;
-        width: 100%;
-    }
-} 
-@media screen and (max-width: 1023px) {
-    .header .cont-header {
-        padding: 50px 0;
-    }
-    .header .cont-header h1 {
-        display: block;
-        font-size: 24px;
-        line-height: 30px;
-        font-weight: 400;
-    }
-    .cont-header .header-menu li {
-        padding-left: 0;
-        width: 100%;
-        margin: 0 20px;
-        height: 40px;
-    }
-
-    /* 그리드 반응형의 문제: 처음부터 반응형을 고려해서 틀을짜야 한다. */
-
-    /* .mdn-blog {
-        grid-row: 2/3;
-        grid-column: 1/6;
-    }
-    .cont-art {
-        grid-row: 3/4;
-        grid-column: 1/6;
-    } */
-}
-
-@media screen and (max-width: 800px) {
-    .cont-menu .mdn-logo {
-        min-width: 170px;
-        height: 50px;
-    }
-    .cont-menu .nav-menu li{
-        max-height: 0px;
-        overflow: hidden;
-    }
-    .cont-menu .find-menu {
-        display: none;
-    }
-    .header .cont-menu .btn-open {
-        display: block;
-        position: relative;
-        top: 20px;
-        left: 200px;
-        cursor: pointer;
-    }
-    .header .cont-menu .btn-open:focus + .nav-menu li{
-        overflow: visible;
-        max-height: 1000px;
-
-    }
-}
-
 body {
     display: grid;
     font-family: arial, x-locale-body, sans-serif;
@@ -78,33 +14,29 @@ body {
     grid-column: 1/6;
 }
 .cont-menu {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 24px 24px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 40px;
+    align-items: center;
 }
-.cont-menu .checkbox {
-    display: none;
-}
-.cont-menu .mdn-logo {
-    background: url(./img/MDN_Web_Docs.svg) center no-repeat ;
+
+.cont-menu .mdn-logo{
+    display: block;
     width: 200px;
     height: 60px;
-    vertical-align: top;
-    margin-top: 15px;
 }
 .cont-menu .nav-menu {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     line-height: 20px;
 }
-
-/*질문 justify-content: space-between; 이 안먹음?  */
-
 .cont-menu .nav-menu a {
     display: flex;
     margin: 0 50px;
-    vertical-align: top;
-    margin-top: 30px;
     color: #1b1b1b;
     font-weight: bold;
 }
@@ -114,27 +46,19 @@ body {
     width: 18px;
     transform: rotate(90deg);
 }
-
-
 .find-menu {
     position: relative;
-    width: 350px;
-    height: 40px;
-    border: 2px solid #000;
-    vertical-align: top;
-    margin-top: 20px
+    width: 30%;
 }
-
 .find-menu .txt-search {
-    position: absolute;
-    left: 0;
-    top: 0;
-    border: none;
-    vertical-align: top;
-    margin-top: 10px;
+    display: block;
+    border: 2px solid #000;
+    color: #1b1b1b;
+    width: 100%;
+    min-width: 60px;
+    padding: 6px 12px;
+    line-height: 2;
 }
-/*  요기 질문 width:100%을 키면 글씨가 다 나오고, 그림이 짤리고, 반대는 글씨가 짤림 */
-
 .find-menu .btn-search {
     position: absolute;
     right: 3px;
@@ -145,18 +69,6 @@ body {
     border: none;
     background-color: transparent;
 }
-
-.cont-menu .btn-open {
-    display:none;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-}
-
-
-
-/* header */
 
 .cont-header {
     background-color: #83bfff;
@@ -172,7 +84,7 @@ body {
     font-size: 39px;
     line-height: 47px;
     font-family: 'Zilla Slab', serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 .cont-header .header-menu {
     display: flex;
@@ -183,31 +95,57 @@ body {
 }
 .cont-header .header-menu li {
     display: flex;
-    padding-right: 100px;
     margin-right: 70px;
-    line-height: 30px;
+    width: 250px;
+    line-height: 1.5;
     border-bottom: 2px solid #1b1b1b;
     color: #1b1b1b;
     position: relative;
 }
-.cont-header .header-menu li::after {
-    display: block;
-    content: '\f061';
-    font-family: "Font Awesome 5 Free";;
-    font-weight: 600;
-    position: absolute;
-    right: 0;
-}
 .cont-header .header-menu a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
     color: #1b1b1b;
 }
+.cont-header .header-menu li:last-child {
+    margin-right: 10px;
+}
+.cont-header .header-menu li::after {
+    display: block;
+    content: '';
+    background-image: url(./img/arrow.svg);
+    width: 16px;
+    height: 16px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.cont-header .header-menu a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+    color: #1b1b1b;
+}
+.cont-header .header-menu a:hover {
+    text-decoration: underline;
+}
 
-/* SECTION */
-
+/* main-section */
+.main {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1400px;
+    padding: 24px;
+    margin: 48px 140px;
+    box-sizing: border-box;
+} 
 .mdn-blog {
-    grid-row: 2/3;
-    grid-column: 1/4;
-    margin: 75px 30px 0 20px;
+    width: 55%;
+    margin-left: 48px;
 }
 .mdn-blog .tit-blog {
     font-family: 'Zilla Slab', serif;
@@ -243,9 +181,8 @@ body {
 
 /* ARTICLE */
 .cont-art {
-    grid-row: 2/3;
-    grid-column: 4/6;
-    margin: 75px 30px 87px 20px;
+    width: 30%;
+    margin: 0 30px 87px 20px;
 }
 .cont-art .tit-art {
     margin-bottom: 24px;
@@ -270,41 +207,37 @@ body {
 
 /* FOOTER */
 footer {
-    grid-column: 1/6;
     grid-row: 3/4;
-    display: grid;
+    grid-column: 1/6;
     background-color: #1b1b1b;
-    padding: 50px 0 70px 20px;
+    padding: 48px 24px;
 }
 .footer-section {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3,auto);
+    display: flex;
+    max-width: 1400px;
+    flex-wrap: wrap;
+    
 }
-.footer-section .cont-left{
-    grid-column: 1/2;
-    grid-row: 1/2;
+.footer-section .cont-left {
+    padding-right: 30%;
 }
+
 .footer-section .cont-left a{
     color: white;
     line-height: 3;
 }
-.footer-section .cont-left a>img {
+.footer-section .cont-left .footer-logo {
     width:200px;
 }
-.footer-section .mdn-sns {
-    padding: 20px 20px 20px 0;
-    grid-column: 1/2;
-    grid-row: 2/3;
+.footer-section  .mdn-sns {
     display: flex;
     font-family: 'Zilla Slab', serif;
     font-size: 20px;
     color: #fff;
 }
 .footer-section .mdn-sns img {
-    width: 25px;
     height: 25px;
-    padding-left: 20px;
+    margin-right: 20px;
 }
 .footer-section .cont-right {
     padding-top: 50px;
