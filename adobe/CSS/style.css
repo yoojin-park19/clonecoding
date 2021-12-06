@@ -253,8 +253,8 @@
   color: #fff;
 }
 .cont-photo .photo-city {
-  background-image: url(../img/street-g7084f9be2_1920.jpg);
-  background-size: contain;
+  background: url(../img/street-g7084f9be2_1920.jpg) no-repeat;
+  background-size: cover;
 }
 .cont-photo .photo-land {
   background: url(../img/mountain-gcf70dfe2f_1920.jpg) no-repeat;
@@ -395,7 +395,6 @@
   background: url(../img/globe-solid.svg) no-repeat;
 }
 
-/* 화살표 넣어야 함 */
 
 .cont-other .list-sns .btn {
   width: 20px;
