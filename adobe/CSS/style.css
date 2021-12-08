@@ -19,10 +19,11 @@
 .navigation {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 0 20px;
   position: fixed;
   background-color: #fff;
   width: 100%;
+  min-height: 65px;
 }
 .navigation .img-adobe  {
   width: 25px;
@@ -37,11 +38,22 @@
 .navigation .list-nav-menu {
   display: flex;
   align-items: center;
-  gap: 30px;
+  height: 65px;
   font-size: 14px;
 }
+.navigation .list-nav-menu li {
+  height: 100%;
+  margin-right: 30px;
+}
+.navigation .list-nav-menu li:hover {
+  background-color:#FAFAFA;
+  transition: background-color .1s ease;
+  cursor: pointer;
+}
 .navigation .list-nav-menu .nav-menu {
+  margin-top: 30px;
   display: flex;
+  height: 100%;
 }
 .navigation .list-nav-menu .nav-menu::after {
   display: flex;
@@ -61,17 +73,27 @@
   margin-right: 2.25px;
   margin-top: 2px;
 }
-.navigation .btn-search {
+.navigation .btn-search .img-btn-search{
   position: absolute;
   right: 120px;
-  background: url(../img/search.svg);
+  top: 23px;
   width: 20px;
   height: 20px;
+}
+
+/* 파란색으로 바뀌는거 도와주세요!! */
+
+.navigation .btn-search .img-btn-search:hover {
+  cursor: pointer;
+  fill:royalblue;
 }
 .navigation .btn-sign {
   position: absolute;
   right: 70px;
   font-size: 14px;
+}
+.navigation .btn-sign:hover {
+  color: #1473e6;
 }
 
 /* header */
@@ -111,6 +133,13 @@
   font-size: 14px;
   margin-left: 10px;
 }
+.header .box-header a:hover {
+  text-decoration: underline;
+}
+.header .box-header .btn-buy:hover {
+  background-color: #045FB4;
+  cursor: pointer;
+}
 
 /* section: cont-cloud */
 
@@ -142,6 +171,9 @@
 .cont-cloud .card_1 a {
   color: #000;
   font-size: 14px;
+}
+.cont-cloud .card_1 a:hover {
+  text-decoration: underline;
 }
 .cont-cloud .txt-cloud {
   background: url(../img/colorful-gdb700c308_1280.png) no-repeat;
@@ -184,6 +216,12 @@
   margin: 20px 0;
   font-weight: 700;
 }
+.cont-cloud .txt-tutorial .list-tutorial li:first-child:hover {
+  text-decoration: none;
+}
+.cont-cloud .txt-tutorial .list-tutorial li:hover {
+  text-decoration: underline;
+}
 .cont-cloud .txt-tutorial .list-pdf .title {
   font-weight: 700;
   border-bottom: 1px solid #000;
@@ -194,6 +232,12 @@
   font-size: 14px;
   margin: 20px 0;
   font-weight: 700;
+}
+.cont-cloud .txt-tutorial .list-pdf li:hover:first-child {
+  text-decoration: none;
+}
+.cont-cloud .txt-tutorial .list-pdf li:hover {
+  text-decoration: underline;
 }
 
 /* section: cont-student */
@@ -225,6 +269,10 @@
   font-weight: 500;
   margin-bottom: 30px;
 }
+.cont-student .box-student .btn-buy:hover {
+  background-color: #045FB4;
+  cursor: pointer;
+}
 .cont-student img {
   width: 400px;
 }
@@ -251,6 +299,9 @@
 .cont-photo .photo a {
   font-size: 14px;
   color: #fff;
+}
+.cont-photo .photo a:hover {
+  text-decoration: underline;
 }
 .cont-photo .photo-city {
   background: url(../img/street-g7084f9be2_1920.jpg) no-repeat;
@@ -294,7 +345,10 @@
   line-height: 22px;
   margin-bottom: 30px;
 }
-
+.cont-included .btn-buy:hover {
+  background-color: #045FB4;
+  cursor: pointer;
+}
 /* footer */
 /* txt-footer */
 .txt-footer {
@@ -332,6 +386,9 @@
 }
 .menu-footer .menu li>a {
   font-size: 12px;
+  color: #4b4b4b;
+}
+.menu-footer .menu li>a:hover {
   color: #999;
 }
 .menu-footer .menu-footer-business li:last-child {
@@ -368,6 +425,9 @@
   padding: 0 20px;
   text-align: right;
 }
+.cont-down .list-down a:hover {
+  color: #999;
+}
 .cont-down .list-down .down-rd {
   background: url(../img/reader_appicon_64_grayscale.svg) no-repeat;
 }
@@ -383,18 +443,38 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  margin: 40px 20px 10px;
+  margin: 40px 20px 30px;
 }
 .cont-other .list-sns {
   display: flex;
 }
 .cont-other .list-sns .btn-region {
-  font-size: 12px;
-  color: #999;
-  padding-left: 20px;
+  font-size: 14px;
+  color: #4b4b4b;
+  padding-left:20px;
   background: url(../img/globe-solid.svg) no-repeat;
+  display: flex;
 }
-
+.cont-other .list-sns .btn-region::after {
+  width: 6px;
+  height: 6px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-bottom-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-color: #2c2c2c;
+  transform-origin: 75% 75%;
+  transform: rotate(45deg);
+  transition: transform .1s ease;
+  content: "";
+  margin-left: 5px;
+  margin-right: 2.25px;
+  margin-top: 2px;
+}
+.cont-other .list-sns .btn-region:hover {
+  color: #999;
+}
 
 .cont-other .list-sns .btn {
   width: 20px;
