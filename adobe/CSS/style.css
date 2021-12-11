@@ -13,7 +13,10 @@
   padding: 0 15px;
   text-align: center;
 }
-
+.btn-view {
+    margin-top: 20px;
+    color: #1473e6;
+}
 
 /* navigation */
 .navigation {
@@ -25,25 +28,37 @@
   width: 100%;
   min-height: 65px;
 }
-.navigation .img-adobe  {
-  width: 25px;
-  padding: 10px;
-}
+
+/*  가상요소 썼을때 글자만 내리는 법? position?? */
 .navigation .txt-adobe {
   color: red;
   font-weight: 700;
   font-size: 18px;
-  margin-right: 40px;
+  margin: 30px 40px 0 40px;
+  display: flex;
+  position: relative;
+}
+.navigation .txt-adobe::before {
+  display: block;
+  content: '';
+  background: url(../img/Adobe_Corporate_Horizontal_Red_HEX.svg);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  position: absolute;
+  left: -35px;
+  top: -10px;
 }
 .navigation .list-nav-menu {
   display: flex;
   align-items: center;
   height: 65px;
   font-size: 14px;
+  width: 100%;
 }
 .navigation .list-nav-menu li {
-  height: 100%;
   margin-right: 30px;
+  height: 100%;
 }
 .navigation .list-nav-menu li:hover {
   background-color:#FAFAFA;
@@ -51,9 +66,8 @@
   cursor: pointer;
 }
 .navigation .list-nav-menu .nav-menu {
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
-  height: 100%;
 }
 .navigation .list-nav-menu .nav-menu::after {
   display: flex;
@@ -73,24 +87,30 @@
   margin-right: 2.25px;
   margin-top: 2px;
 }
-.navigation .btn-search .img-btn-search{
-  position: absolute;
-  right: 120px;
-  top: 23px;
+/* .navigation .cont-search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+} */
+.navigation .btn-search{
   width: 20px;
   height: 20px;
+  background-image: url(../img/search.svg);
+  margin-right: 10px;
+  position: absolute;
+  top: 28px;
+  right: 100px;
 }
-
 /* 파란색으로 바뀌는거 도와주세요!! */
 
-.navigation .btn-search .img-btn-search:hover {
+.navigation .btn-search:hover {
   cursor: pointer;
   fill:royalblue;
 }
 .navigation .btn-sign {
   position: absolute;
-  right: 70px;
-  font-size: 14px;
+  top: 30px;
+  right: 60px;
 }
 .navigation .btn-sign:hover {
   color: #1473e6;
@@ -442,6 +462,7 @@
 .cont-other {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 40px 20px 30px;
 }
@@ -508,3 +529,5 @@
   height: 18px;
   margin-top: -3px;
 }
+
+

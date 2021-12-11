@@ -1,0 +1,375 @@
+
+
+/* 1번째 */
+
+.navigation .list-nav-menu .cont-list-creativity {
+    display: flex;
+    justify-content: space-around;
+    min-width: 1200px;
+    background-color: #FAFAFA;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 50px 0;
+    display: none;
+}
+.navigation .list-nav-menu .cont-list-creativity ul {
+    background-color: #FAFAFA;
+}
+  .navigation .list-nav-menu .cont-list-creativity li{
+    height: auto;
+    margin-bottom: 5px;
+}
+.navigation .list-nav-menu .cont-list-creativity li:hover {
+    background-color: #F2F2F2;
+}
+.navigation .list-nav-menu .cont-list-creativity a:hover {
+    color: #1473e6;
+}
+.list-nav-menu .cont-list-creativity li:first-child {
+    font-size: 14px;
+    color: #505050;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D8D8D8;
+}
+.navigation .cont-list-creativity li>a {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #505050;
+}
+.navigation .list-nav-menu .cont-list-creativity a>small {
+    font-size: 12px;
+    line-height: 17px;
+    color: #656565;
+}
+.list-nav-menu .cont-list-creativity .list-creativity li:first-child {
+    display: flex;
+    margin-bottom: 20px;
+    border: none;
+}
+.cont-list-creativity .list-creativity li:first-child::before {
+    display: block;
+    content: '';
+    background-image: url(../img/creativecloud-app.svg);
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.cont-list-creativity .list-creativity .btn-buy {
+    margin-top: 20px;
+}
+.cont-list-creativity .list-featured .btn-view {
+    margin-top: 20px;
+    color: #1473e6;
+}
+.cont-list-creativity .card-conference {
+    width: 260px;
+    background: url(../img/colorful-gdb700c308_1280.png) no-repeat;
+    background-size: cover;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont-list-creativity .card-conference h2 {
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 40px 0 30px; 
+}
+.cont-list-creativity .card-conference strong {
+    font-weight: 700;
+    line-height: 1.5;
+}
+.cont-list-creativity .card-conference a {
+    align-self: flex-start;
+    margin: 20px 0 0 20px;
+    text-decoration: underline;
+}
+
+/* 2번째 */
+.navigation .list-nav-menu .cont-list-pdf {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 1200px;
+    background-color: #FAFAFA;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 50px 0;
+    display: none;
+}
+.navigation .list-nav-menu .cont-list-pdf ul {
+    background-color: #FAFAFA;
+}
+.navigation .list-nav-menu .cont-list-pdf li{
+    height: auto;
+    margin-bottom: 15px;
+}
+.navigation .list-nav-menu .cont-list-pdf li:hover {
+    background-color: #F2F2F2;
+}
+.navigation .list-nav-menu .cont-list-pdf a:hover {
+    color: #1473e6;
+}
+.list-nav-menu .cont-list-pdf li:first-child {
+    font-size: 14px;
+    color: #505050;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D8D8D8;
+}
+.navigation .cont-list-pdf li>a {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #505050;
+}
+.navigation .list-nav-menu .cont-list-pdf a>small {
+    font-size: 12px;
+    line-height: 17px;
+    color: #656565;
+}
+
+/* ?? Other PDF를 내리려면 마크업을 바꾸는 수 밖에 없을까요??? */
+
+.cont-list-pdf .list-pdf {
+    margin-top: 30px;
+}
+.cont-list-pdf .list-products li:nth-child(2) {
+    margin: 15px 0;
+    display: flex;
+}
+.cont-list-pdf .list-products li:nth-child(2)::before {
+    display: block;
+    content: '';
+    background-image: url(../img/acro_reader.svg);
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.cont-list-pdf .list-products .btn-buy {
+    margin-bottom: 8px;
+}
+.cont-list-pdf .card-acrobat {
+    width: 200px;
+    height: 160px;
+    background-color: #ffff;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+.cont-list-pdf .card-acrobat h2 {
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.cont-list-pdf .card-acrobat p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.cont-list-pdf .card-acrobat a {
+    color: #1473e6;
+}
+
+/* 3번째 */
+
+.navigation .list-nav-menu .cont-list-marketing {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 1200px;
+    background-color: #FAFAFA;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+    padding-top: 30px;
+    display: none;
+}
+.navigation .list-nav-menu .cont-list-marketing ul {
+    background-color: #FAFAFA;
+    margin-bottom: 50px;
+}
+.navigation .list-nav-menu .cont-list-marketing li{
+    height: auto;
+    margin-bottom: 9px;
+}
+.navigation .list-nav-menu .cont-list-marketing li:hover {
+    background-color: #F2F2F2;
+}
+.navigation .list-nav-menu .cont-list-marketing a:hover {
+    color: #1473e6;
+}
+.list-nav-menu .cont-list-marketing .list-marketing li:first-child {
+    margin: 15px 0;
+    display: flex;
+    border: none;
+}
+.cont-list-marketing .list-marketing li:first-child::before {
+    display: block;
+    content: '';
+    background-image: url(../img/Adobe_Experience_Cloud_logo_RGB.svg);
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+
+}.list-nav-menu .cont-list-marketing li:first-child {
+    font-size: 14px;
+    color: #505050;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D8D8D8;
+    margin-top: 20px;
+}
+.list-nav-menu .cont-list-marketing .list-marketing li:nth-child(2) {
+    font-size: 14px;
+    color: #505050;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D8D8D8;
+    margin-top: 20px;
+}
+.navigation .cont-list-marketing li>a {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #505050;
+}
+.navigation .list-nav-menu .cont-list-marketing a>small {
+    font-size: 12px;
+    line-height: 17px;
+    color: #656565;
+}
+.navigation .cont-list-marketing .btn-view {
+    color: #1473e6;
+}
+
+/* 4번째 */
+.navigation .list-nav-menu .cont-list-help {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 1200px;
+    background-color: #FAFAFA;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 50px 0;
+    display: none;
+}
+.navigation .list-nav-menu .cont-list-help ul {
+    background-color: #FAFAFA;
+    margin-bottom: 50px;
+}
+.navigation .list-nav-menu .cont-list-help li{
+    height: auto;
+    margin-bottom: 9px;
+}
+.navigation .list-nav-menu .cont-list-help li:hover {
+    background-color: #F2F2F2;
+}
+.navigation .list-nav-menu .cont-list-help a:hover {
+    color: #1473e6;
+}
+.list-nav-menu .cont-list-help li:first-child {
+    font-size: 14px;
+    color: #505050;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D8D8D8;
+}
+.navigation .cont-list-help li>a {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #505050;
+}
+.navigation .list-nav-menu .cont-list-help a>small {
+    font-size: 12px;
+    line-height: 17px;
+    color: #656565;
+}
+.list-nav-menu .cont-list-help .btn-down {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    margin: 1px 0;
+}
+.cont-list-help .card-help {
+    width: 200px;
+    height: auto;
+    background-color: #ffff;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    padding:30px 20px 0;
+}
+.cont-list-help .card-help h2 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.cont-list-help .card-help p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #656565;
+}
+.cont-list-help .card-help a {
+    color: #1473e6;
+}
+.cont-list-help .card-help .img-card-help {
+    width: 100px;
+    margin: 10px 0 0 40px;
+}
+
+/* 서치바
+.cont-search .input-search {
+    width: 80%;
+    height: 30px;
+    margin: 100px 10px 10px;
+    min-width: 1000px;
+} */
+
+.cont-other .modal{
+    background-color: transparent;
+    margin: 50px;
+}
+.cont-other .modal h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.cont-other .modal .list-region {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+}
+.modal .list-region li>a {
+    color: #1473e6;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.modal .list-region .title-region {
+    color: black;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* ??? 세로로 쌓고 싶어요!! */

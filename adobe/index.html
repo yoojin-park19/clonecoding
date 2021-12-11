@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/modal.css">
     <link rel="stylesheet" href="./CSS/style.css">
 
 
@@ -20,114 +21,314 @@
 <body>
     <nav class="navigation">
         <h1 class="hidden-txt">Adobe</h1>
-        <a href="#" class="img-adobe"><img src="./img/Adobe_Corporate_Horizontal_Red_HEX.svg" alt="adobe"></a>
-        <a href="#" class="txt-adobe">Adobe</a>
         <ul class="list-nav-menu">
-            <li><a href="#" class="nav-menu">Creativity & Design</a></li>
-                <ul class="list-creativity">
-                    <li>
-                        <a href="#">
-                            What is Creative Cloud
-                            <small>Creative apps and services for everyone</small> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Photographers
-                            <small>Lightroom Photoshop, and more</small> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Student and teachers
-                            <small>Save over 60% on Creative Cloud</small> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Small and medium business
-                            <small>Creative apps and services for teams</small> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Enterprise
-                            <small>Solutions for large organizations</small> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Schools and universities
-                            <small>Simple administration and licensing</small> 
-                        </a>
-                    </li> 
-                    <li><button>Vies plans and pricing</button></li>               
-                </ul>
-                <ul class="list-featured">
-                    <li>
-                        Featured products
-                    </li>
-                    <li>
-                        <a href="#">
-                            Photoshop
-                            <small>Image editing and design</small> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Lightroom
-                            <small>The cloud-based photo service</small> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Illustrator
-                            <small>Vector graphics and illustration</small> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Premiere Pro
-                            <small>Video editing and production</small> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Adobe Accrobat
-                            <small>The complete PDF solution</small> 
-                        </a>
-                    </li> 
-                    <li>
-                        <a href="#">
-                            Adobe Stock
-                            <small>High=quality licensable assets</small> 
-                        </a>
-                    </li> 
-                    <li><a href="#">View all Creative Cloud products</a></li>               
-                </ul>
-                <ul class="list-explore">
-                    <li>Explore</li>
-                    <li><a href="#">Photo</a></li>
-                    <li><a href="#">Graphic design</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Illustration</a></li>
-                    <li><a href="#">UI and UX</a></li>
-                    <li><a href="#">Social media</a></li>
-                    <li><a href="#">3D and AR</a></li>           
-                </ul>
-                <article class="card-conference">
-                    <h2>THE CREATIVITY CONFERENCE</h2>
-                    <strong>The MAX after-party is in full swing.</strong>
-                    <p>Missed the creative bash of the year? Catch the highlights and 400+ sessions on demand.</p>
-                    <a href="#">Watch now</a>
-                </article>
-            <li><a href="#" class="nav-menu">PDF & E-signatures</a></li>
-            
-            <li><a href="#" class="nav-menu">Marketing & Commerce</a></li>
-            <li><a href="#" class="nav-menu">Help & Support</a></li>
+            <li><a href="#" class="txt-adobe">Adobe</a></li>
+            <li>
+                <a href="#" class="nav-menu menu-creativity">Creativity & Design</a>
+                <div class="cont-list-creativity">
+                    <ul class="list-creativity">
+                        <li>
+                            <a href="#">
+                                What is Creative Cloud<br>
+                                <small>Creative apps and services for everyone</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Photographers<br>
+                                <small>Lightroom Photoshop, and more</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Student and teachers<br>
+                                <small>Save over 60% on Creative Cloud</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Small and medium business<br>
+                                <small>Creative apps and services for teams</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Enterprise<br>
+                                <small>Solutions for large organizations</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Schools and universities<br>
+                                <small>Simple administration and licensing</small>
+                            </a>
+                        </li>
+                        <li><button class="btn-buy">Vies plans and pricing</button></li>
+                    </ul>
+                    <ul class="list-featured">
+                        <li>
+                            Featured products
+                        </li>
+                        <li>
+                            <a href="#">
+                                Photoshop
+                                <small>Image editing and design</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Lightroom
+                                <small>The cloud-based photo service</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Illustrator
+                                <small>Vector graphics and illustration</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Premiere Pro
+                                <small>Video editing and production</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Adobe Accrobat
+                                <small>The complete PDF solution</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Adobe Stock
+                                <small>High-quality licensable assets</small>
+                            </a>
+                        </li>
+                        <li><a href="#" class="btn-view">View all Creative Cloud products</a></li>
+                    </ul>
+                    <ul class="list-explore">
+                        <li>Explore</li>
+                        <li><a href="#">Photo</a></li>
+                        <li><a href="#">Graphic design</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Illustration</a></li>
+                        <li><a href="#">UI and UX</a></li>
+                        <li><a href="#">Social media</a></li>
+                        <li><a href="#">3D and AR</a></li>
+                    </ul>
+                    <article class="card-conference">
+                        <h2>THE CREATIVITY CONFERENCE</h2>
+                        <strong>The MAX after-party is in full swing.</strong>
+                        <p>Missed the creative bash of the year?<br>
+                            Catch the highlights and 400+<br>
+                            sessions on demand.</p>
+                        <a href="#">Watch now</a>
+                    </article>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="nav-menu">PDF & E-signatures</a>
+                <div class="cont-list-pdf">
+                    <div>
+                        <ul class="list-products">
+                            <li>Products</li>
+                            <li>
+                                <a href="#">
+                                    Adobe Acrobat
+                                    <small>The complete PDF solution</small>
+                                </a>
+                            </li>
+                            <li><button class="btn-buy">Acobat plans and pricing</button></li>
+                            <li>
+                                <a href="#">
+                                    Adobe Acrobat Sign
+                                    <small>The complete e-signature solution</small>
+                                </a>
+                            </li>
+                            <li><a href="#" class="btn-view">Acrobat Sign and pricing</a></li>
+                        </ul>
+                        <ul class="list-pdf">
+                            <li>Other PDF products</li>
+                            <li>
+                                <a href="#">
+                                    Acrobat Reader
+                                    <small>View, scan, ans annotate PDF's</small>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Online tools
+                                    <small>Work with PDFs now</small>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="list-solutions">
+                        <li>Solutions</li>
+                        <li>
+                            <a href="#">
+                                Business solutions
+                                <small>For teams and large organizations</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Acrobat for business
+                                <small>The intelligent document platform</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Industries and departments
+                                <small>Addrssing your challenges</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Goverment solutions
+                                <small>Improve servises and eliminate delays</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Integrations
+                                <small>Uniting your apps</small>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="Resoures">
+                        <li>Solutions</li>
+                        <li><a href="#">Events and webinars</a></li>
+                        <li><a href="#">Customer stories</a></li>
+                        <li><a href="#">White papers and reports</a></li>
+                    </ul>
+                    <article class="card-acrobat">
+                        <h2>Acrobat Pro DC</h2>
+                        <p>Create, edit, and sign documents with our all-in-one PDF and e-signature solution.</p>
+                        <a href="#">Start free trial</a>
+                    </article>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="nav-menu">Marketing & Commerce</a>
+                <div class="cont-list-marketing">
+                    <ul class="list-marketing">
+                        <li>
+                            <a href="#">
+                                What is Experience Cloud?
+                                <small>Digital experience solutions</small>
+                            </a>
+                        </li>
+                        <li>Solutions</li>
+                        <li><a href="#">Data insights and audiences</a></li>
+                        <li><a href="#">Experience management platform</a></li>
+                        <li><a href="#">Content management</a></li>
+                        <li><a href="#">Commerce</a></li>
+                        <li><a href="#">Customer journeys</a></li>
+                        <li><a href="#">B2B marketing</a></li>
+                        <li><a href="#">Digital enrollment and onboarding</a></li>
+                        <li><button class="btn-buy">Request a demo</button></li>
+                    </ul>
+                    <ul class="list-products">
+                        <li>Products</li>
+                        <li><a href="#">Analytics</a></li>
+                        <li><a href="#">Experience Manager</a></li>
+                        <li><a href="#">Real-Time CDP</a></li>
+                        <li><a href="#">Marketo Engage</a></li>
+                        <li><a href="#">Commerce</a></li>
+                        <li><a href="#">Campaign</a></li>
+                        <li><a href="#">Adobe Workfront</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Experience Platform</a></li>
+                        <li><a href="#" class="btn-view">View all products</a></li>
+                    </ul>
+                    <div>
+                        <ul class="list-resources">
+                            <li>Resources</li>
+                            <li><a href="#">Resource center</a></li>
+                            <li><a href="#">Customer success stories</a></li>
+                        </ul>
+                        <ul class="list-customer">
+                            <li>For customers</li>
+                            <li><a href="#">Learn and documentation</a></li>
+                            <li><a href="#">Community forums</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="list-support">
+                            <li>Support</li>
+                            <li><a href="#">Service and support</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                        <ul class="list-Events">
+                            <li>Events</li>
+                            <li><a href="#">Adobe Summit</a></li>
+                        </ul>
+                        <ul class="list-why">
+                            <li>Why Partner with Adobe</li>
+                            <li><a href="#">Why partner with Adobe</a></li>
+                        </ul>
+                    </div>
+                </div>   
+            </li>
+            <li>
+                <a href="#" class="nav-menu">Help & Support</a>
+                <div class="cont-list-help">
+                    <ul class="list-help">
+                        <li>Help and support</li>
+                        <li>
+                            <a href="#">Help Center
+                                <small>Troubleshooting and how-tos</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Enterprise Support
+                                <small>Dedicated help for large organizations</small>
+                            </a>
+                        </li>
+                        <li><a href="#">Adobe Support Community</a></li>
+                        <li><a href="#">Covid-19 resources</a></li>
+                        <li><button class="btn-buy btn-down">Download and Install</button></li>
+                        <li><button class="btn-buy">Contact us</button></li>
+                    </ul>
+                    <ul class="list-common">
+                        <li>Common tasks</li>
+                        <li><a href="#">Manage my account</a></li>
+                        <li><a href="#">Manage my plan</a></li>
+                    </ul>
+                    <ul class="list-learning">
+                        <li>Learning resources</li>
+                        <li>
+                            <a href="#">Creative Cloud tutorials
+                                <small>Learn with tutorials designed to inspire</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Acrobat tutorials
+                                <small>Learn the basic or refine your skills</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Adobe Experience League
+                                <small>Personalized learging to develop your skills</small>
+                            </a>
+                        </li>
+                    </ul>
+                    <article class="card-help">
+                        <h2>Try the apps in Creative Cloud</h2>
+                        <p>Try full versions of 20+ creative apps for desktop and mobile.</p>
+                        <a href="#">Download and get started</a>
+                        <img src="./img/creativecloud-app.svg" alt="creative cloud" class="img-card-help">
+                    </article>
+                </div>     
+            </li>
         </ul>
-        <button class="btn-search"><img src="./img/search.svg" alt="search" class="img-btn-search"></button>
-        <a href="#" class="btn-sign">Sign In</a>
+        <!-- <div class="cont-search"> -->
+            <button class="btn-search"></button>
+            <a href="#" class="btn-sign">Sign In</a>
+            <!-- <input type="text" placeholder="Search" class="input-search"> -->
+        <!-- </div> -->
     </nav>
     <header class="header">
         <div class="box-header">
@@ -268,16 +469,16 @@
                     <li><a href="#">Apps for Android</a></li>
                 </ul>
             </ul>
-                <ul class="menu menu-footer-cloud">
-                    <li class="title">Experience Cloud</li>
-                    <li><a href="#">What is Experience Cloud?</a></li>
-                    <li><a href="#">Analytics</a></li>
-                    <li><a href="#">Experience Manager</a></li>
-                    <li><a href="#">Commerce</a></li>
-                    <li><a href="#">Marketo Engage</a></li>
-                    <li><a href="#">Workfront</a></li>
-                </ul>
-            <ul>    
+            <ul class="menu menu-footer-cloud">
+                <li class="title">Experience Cloud</li>
+                <li><a href="#">What is Experience Cloud?</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Experience Manager</a></li>
+                <li><a href="#">Commerce</a></li>
+                <li><a href="#">Marketo Engage</a></li>
+                <li><a href="#">Workfront</a></li>
+            </ul>
+            <ul>
                 <ul class="menu menu-footer-support">
                     <li class="title">Support</li>
                     <li><a href="#">Download and install</a></li>
@@ -296,25 +497,25 @@
                     <li><a href="#">Log in to your account</a></li>
                 </ul>
             </ul>
-                <ul class="menu menu-footer-adobe">
-                    <li class="title">Adobe</li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Newsroom</a></li>
-                    <li><a href="#">Corporate responsibility</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">Supply chain</a></li>
-                    <li><a href="#">Trust Center</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Diversity and inclusion</a></li>
-                    <li><a href="#">Integrity</a></li>
-                    <li><a href="#">COVID-19 resources</a></li>
-                </ul>
+            <ul class="menu menu-footer-adobe">
+                <li class="title">Adobe</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Corporate responsibility</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Supply chain</a></li>
+                <li><a href="#">Trust Center</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Diversity and inclusion</a></li>
+                <li><a href="#">Integrity</a></li>
+                <li><a href="#">COVID-19 resources</a></li>
+            </ul>
         </section>
         <section class="cont-down">
             <h3>Featured downloads</h3>
             <ul class="list-down">
-                <li><a href="#" class="down-rd" >Adobe Acrobat Reader</a></li>
+                <li><a href="#" class="down-rd">Adobe Acrobat Reader</a></li>
                 <li><a href="#" class="down-ps">Photoshop</a></li>
                 <li><a href="#" class="down-ill">illustrator</a></li>
             </ul>
@@ -322,7 +523,6 @@
         <section class="cont-other">
             <h3 class="hidden-txt">other information</h3>
             <ul class="list-sns">
-                <li><button class="btn-region">Change region</button></li>
                 <li><a href="#"><img src="./img/social-icon-facebook.svg" alt="facebook" class="btn btn-fb"></a></li>
                 <li><a href="#"><img src="./img/social-icon-twitter.svg" alt="twitter" class="btn btn-tw"></a></li>
                 <li><a href="#"><img src="./img/social-icon-linkedin.svg" alt="twitter" class="btn btn-link"></a></li>
@@ -336,8 +536,118 @@
                 <li><a href="#">Do not sell my personal information</a></li>
                 <li><a href="#">AdChoices</a></li>
             </ul>
+            <button id="myBtn">Change region</button>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <h4>Choose your region</h4>
+                <p>Selecting a region changes the language and/or content on Adobe.com.</p>
+                <button class="btn-close"></button>
+                <ul class="list-region">
+                    <li class="title-region">Americas</li>
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Canada - English</a></li>
+                    <li><a href="#">Canada - Français</a></li>
+                    <li><a href="#">Chile</a></li>
+                    <li><a href="#">Latinoamérica</a></li>
+                    <li><a href="#">México</a></li>
+                    <li><a href="#">United States</a></li>
+                    <li class="title-region">Europe, Middle East and Africa</li>
+                    <li><a href="#">Africa - English</a></li>
+                    <li><a href="#">België - Nederlands</a></li>
+                    <li><a href="#">Belgique - Français</a></li>
+                    <li><a href="#">Belgium - English</a></li>
+                    <li><a href="#">Česká republika</a></li>
+                    <li><a href="#">CIS - English</a></li>
+                    <li><a href="#">Cyprus - English</a></li>
+                    <li><a href="#">Danmark</a></li>
+                    <li><a href="#">Deutschland</a></li>
+                    <li><a href="#">Eesti</a></li>
+                    <li><a href="#">España</a></li>
+                    <li><a href="#">France</a></li>
+                    <li><a href="#">Greece - English</a></li>
+                    <li><a href="#">Ireland</a></li>
+                    <li><a href="#">Israel - English</a></li>
+                    <li><a href="#">Italia</a></li>
+                    <li><a href="#">Latvija</a></li>
+                    <li><a href="#">Lietuva</a></li>
+                    <li><a href="#">Luxembourg - Deutsch</a></li>
+                    <li><a href="#">Luxembourg - English</a></li>
+                    <li><a href="#">Luxembourg - Français</a></li>
+                    <li><a href="#">Magyarország</a></li>
+                    <li><a href="#">Malta - English</a></li>
+                    <li><a href="#">Middle East and North Africa - English</a></li>
+                    <li><a href="#">Nederland</a></li>
+                    <li><a href="#">Norge</a></li>
+                    <li><a href="#">Österreich</a></li>
+                    <li><a href="#">Polska</a></li>
+                    <li><a href="#">Portugal</a></li>
+                    <li><a href="#">România</a></li>
+                    <li><a href="#">Saudi Arabia - English</a></li>
+                    <li><a href="#">Schweiz</a></li>
+                    <li><a href="#">Slovenija</a></li>
+                    <li><a href="#">Slovensko</a></li>
+                    <li><a href="#">Suisse</a></li>
+                    <li><a href="#">Suomi</a></li>
+                    <li><a href="#">Sverige</a></li>
+                    <li><a href="#">Svizzera</a></li>
+                    <li><a href="#">Türkiye</a></li>
+                    <li><a href="#">United Arab Emirates - English</a></li>
+                    <li><a href="#">United Kingdom</a></li>
+                    <li><a href="#">България</a></li>
+                    <li><a href="#">Россия</a></li>
+                    <li><a href="#">СНГ – русский</a></li>
+                    <li><a href="#">Україна</a></li>
+                    <li><a href="#">الإمارات العربية المتحدة</a></li>
+                    <li><a href="#">الشرق الأوسط وشمال أفريقيا - اللغة العربية</a></li>
+                    <li><a href="#">ישראל - עברית</a></li>
+                    <li><a href="#">المملكة العربية السعودية</a></li>
+                    <li class="title-region">Asia Pacific</li>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">Hong Kong SAR of China</a></li>
+                    <li><a href="#">India - English</a></li>
+                    <li><a href="#">New Zealand</a></li>
+                    <li><a href="#">Singapore</a></li>
+                    <li><a href="#">Southeast Asia (Includes Indonesia, Malaysia, Philippines, and Vietnam) -
+                            English</a></li>
+                    <li><a href="#">Thailand - English</a></li>
+                    <li><a href="#">ประเทศไทย</a></li>
+                    <li><a href="#">中国</a></li>
+                    <li><a href="#">中國香港特別行政區</a></li>
+                    <li><a href="#">台灣地區</a></li>
+                    <li><a href="#">日本</a></li>
+                    <li><a href="#">한국</a></li>
+                </ul>
+                <span class="close">&times;</span>
+            </div>
         </section>
     </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 
 </html>
