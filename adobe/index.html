@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/modal.css">
     <link rel="stylesheet" href="./CSS/style.css">
-
-
 </head>
 
 <body>
@@ -24,8 +22,9 @@
         <ul class="list-nav-menu">
             <li><a href="#" class="txt-adobe">Adobe</a></li>
             <li>
-                <a href="#" class="nav-menu menu-creativity">Creativity & Design</a>
-                <div class="cont-list-creativity">
+                <button class="btn menu-creativity">Creativity & Design</button>
+                <div class="container cont-creativity">
+                    <div class="cont-list-creativity">
                     <ul class="list-creativity">
                         <li>
                             <a href="#">
@@ -125,11 +124,13 @@
                             sessions on demand.</p>
                         <a href="#">Watch now</a>
                     </article>
+                    </div>
                 </div>
             </li>
             <li>
-                <a href="#" class="nav-menu">PDF & E-signatures</a>
-                <div class="cont-list-pdf">
+                <button class="btn">PDF & E-signatures</button>
+                <div class="container cont-pdf">
+                    <div class="cont-list-pdf">
                     <div>
                         <ul class="list-products">
                             <li>Products</li>
@@ -208,11 +209,13 @@
                         <p>Create, edit, and sign documents with our all-in-one PDF and e-signature solution.</p>
                         <a href="#">Start free trial</a>
                     </article>
+                    </div>
                 </div>
             </li>
             <li>
-                <a href="#" class="nav-menu">Marketing & Commerce</a>
-                <div class="cont-list-marketing">
+                <button class="btn">Marketing & Commerce</button>
+                <div class="container cont-marketing">
+                    <div class="cont-list-marketing">
                     <ul class="list-marketing">
                         <li>
                             <a href="#">
@@ -270,11 +273,13 @@
                             <li><a href="#">Why partner with Adobe</a></li>
                         </ul>
                     </div>
-                </div>   
+                    </div>
+                </div>
             </li>
             <li>
-                <a href="#" class="nav-menu">Help & Support</a>
-                <div class="cont-list-help">
+                <button class="btn">Help & Support</button>
+                <div class="container cont-help">
+                    <div class="cont-list-help">
                     <ul class="list-help">
                         <li>Help and support</li>
                         <li>
@@ -321,7 +326,8 @@
                         <a href="#">Download and get started</a>
                         <img src="./img/creativecloud-app.svg" alt="creative cloud" class="img-card-help">
                     </article>
-                </div>     
+                    </div>
+                </div>   
             </li>
         </ul>
         <!-- <div class="cont-search"> -->
@@ -417,8 +423,9 @@
         <button class="btn-buy">Start free trial</button>
     </section>
     <footer class="footer">
-        <h2 class="hidden-txt">more information</h2>
-        <section class="txt-footer">
+        <div id="backGround">
+            <h2 class="hidden-txt">more information</h2>
+            <section class="txt-footer">
             <h3 class="hidden-txt">term&conditions</h3>
             <div class="first">
                 <p>
@@ -432,8 +439,8 @@
                 </p>
                 <a href="#">See terms.</a>
             </div>
-        </section>
-        <section class="menu-footer">
+            </section>
+            <section class="menu-footer">
             <h3 class="hidden-txt">menu for more inforamtion</h3>
             <ul class="menu menu-footer-shop">
                 <li class="title">Shop for</li>
@@ -511,143 +518,119 @@
                 <li><a href="#">Integrity</a></li>
                 <li><a href="#">COVID-19 resources</a></li>
             </ul>
-        </section>
-        <section class="cont-down">
+            </section>
+            <section class="cont-down">
             <h3>Featured downloads</h3>
             <ul class="list-down">
                 <li><a href="#" class="down-rd">Adobe Acrobat Reader</a></li>
                 <li><a href="#" class="down-ps">Photoshop</a></li>
                 <li><a href="#" class="down-ill">illustrator</a></li>
             </ul>
-        </section>
-        <section class="cont-other">
-            <h3 class="hidden-txt">other information</h3>
-            <ul class="list-sns">
-                <li><a href="#"><img src="./img/social-icon-facebook.svg" alt="facebook" class="btn btn-fb"></a></li>
-                <li><a href="#"><img src="./img/social-icon-twitter.svg" alt="twitter" class="btn btn-tw"></a></li>
-                <li><a href="#"><img src="./img/social-icon-linkedin.svg" alt="twitter" class="btn btn-link"></a></li>
-                <li><a href="#"><img src="./img/social-icon-instagram.svg" alt="twitter" class="btn btn-ins"></a></li>
-            </ul>
-            <ul class="list-other">
-                <li><small>Copyright © 2021 Adobe. All rights reserved.</small></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Cookie preferences</a></li>
-                <li><a href="#">Do not sell my personal information</a></li>
-                <li><a href="#">AdChoices</a></li>
-            </ul>
-            <button id="myBtn">Change region</button>
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <h4>Choose your region</h4>
-                <p>Selecting a region changes the language and/or content on Adobe.com.</p>
-                <button class="btn-close"></button>
-                <ul class="list-region">
-                    <li class="title-region">Americas</li>
-                    <li><a href="#">Brasil</a></li>
-                    <li><a href="#">Canada - English</a></li>
-                    <li><a href="#">Canada - Français</a></li>
-                    <li><a href="#">Chile</a></li>
-                    <li><a href="#">Latinoamérica</a></li>
-                    <li><a href="#">México</a></li>
-                    <li><a href="#">United States</a></li>
-                    <li class="title-region">Europe, Middle East and Africa</li>
-                    <li><a href="#">Africa - English</a></li>
-                    <li><a href="#">België - Nederlands</a></li>
-                    <li><a href="#">Belgique - Français</a></li>
-                    <li><a href="#">Belgium - English</a></li>
-                    <li><a href="#">Česká republika</a></li>
-                    <li><a href="#">CIS - English</a></li>
-                    <li><a href="#">Cyprus - English</a></li>
-                    <li><a href="#">Danmark</a></li>
-                    <li><a href="#">Deutschland</a></li>
-                    <li><a href="#">Eesti</a></li>
-                    <li><a href="#">España</a></li>
-                    <li><a href="#">France</a></li>
-                    <li><a href="#">Greece - English</a></li>
-                    <li><a href="#">Ireland</a></li>
-                    <li><a href="#">Israel - English</a></li>
-                    <li><a href="#">Italia</a></li>
-                    <li><a href="#">Latvija</a></li>
-                    <li><a href="#">Lietuva</a></li>
-                    <li><a href="#">Luxembourg - Deutsch</a></li>
-                    <li><a href="#">Luxembourg - English</a></li>
-                    <li><a href="#">Luxembourg - Français</a></li>
-                    <li><a href="#">Magyarország</a></li>
-                    <li><a href="#">Malta - English</a></li>
-                    <li><a href="#">Middle East and North Africa - English</a></li>
-                    <li><a href="#">Nederland</a></li>
-                    <li><a href="#">Norge</a></li>
-                    <li><a href="#">Österreich</a></li>
-                    <li><a href="#">Polska</a></li>
-                    <li><a href="#">Portugal</a></li>
-                    <li><a href="#">România</a></li>
-                    <li><a href="#">Saudi Arabia - English</a></li>
-                    <li><a href="#">Schweiz</a></li>
-                    <li><a href="#">Slovenija</a></li>
-                    <li><a href="#">Slovensko</a></li>
-                    <li><a href="#">Suisse</a></li>
-                    <li><a href="#">Suomi</a></li>
-                    <li><a href="#">Sverige</a></li>
-                    <li><a href="#">Svizzera</a></li>
-                    <li><a href="#">Türkiye</a></li>
-                    <li><a href="#">United Arab Emirates - English</a></li>
-                    <li><a href="#">United Kingdom</a></li>
-                    <li><a href="#">България</a></li>
-                    <li><a href="#">Россия</a></li>
-                    <li><a href="#">СНГ – русский</a></li>
-                    <li><a href="#">Україна</a></li>
-                    <li><a href="#">الإمارات العربية المتحدة</a></li>
-                    <li><a href="#">الشرق الأوسط وشمال أفريقيا - اللغة العربية</a></li>
-                    <li><a href="#">ישראל - עברית</a></li>
-                    <li><a href="#">المملكة العربية السعودية</a></li>
-                    <li class="title-region">Asia Pacific</li>
-                    <li><a href="#">Australia</a></li>
-                    <li><a href="#">Hong Kong SAR of China</a></li>
-                    <li><a href="#">India - English</a></li>
-                    <li><a href="#">New Zealand</a></li>
-                    <li><a href="#">Singapore</a></li>
-                    <li><a href="#">Southeast Asia (Includes Indonesia, Malaysia, Philippines, and Vietnam) -
-                            English</a></li>
-                    <li><a href="#">Thailand - English</a></li>
-                    <li><a href="#">ประเทศไทย</a></li>
-                    <li><a href="#">中国</a></li>
-                    <li><a href="#">中國香港特別行政區</a></li>
-                    <li><a href="#">台灣地區</a></li>
-                    <li><a href="#">日本</a></li>
-                    <li><a href="#">한국</a></li>
+            </section>
+            <section class="cont-other">
+                <h3 class="hidden-txt">other information</h3>
+                <ul class="list-sns">
+                    <li><a href="#"><img src="./img/social-icon-facebook.svg" alt="facebook" class="btn-icon btn-fb"></a></li>
+                    <li><a href="#"><img src="./img/social-icon-twitter.svg" alt="twitter" class="btn-icon btn-tw"></a></li>
+                    <li><a href="#"><img src="./img/social-icon-linkedin.svg" alt="twitter" class="btn-icon btn-link"></a></li>
+                    <li><a href="#"><img src="./img/social-icon-instagram.svg" alt="twitter" class="btn-icon btn-ins"></a></li>
                 </ul>
-                <span class="close">&times;</span>
-            </div>
-        </section>
+                <ul class="list-other">
+                    <li><small>Copyright © 2021 Adobe. All rights reserved.</small></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookie preferences</a></li>
+                    <li><a href="#">Do not sell my personal information</a></li>
+                    <li><a href="#">AdChoices</a></li>
+                </ul>
+                <button id="btnOpen">Change region</button>
+                <div id="myModal" class="modal">
+                    <div id="modalBox">
+                        <div class="modalTitle">
+                            <h4>Choose your region</h4>
+                            <button id="btnClose"></button>
+                            <p>Selecting a region changes the language and/or content on Adobe.com.</p>
+                        </div>
+                        <ul class="list-region">
+                            <li class="title-region">Americas</li>
+                            <li><a href="#">Brasil</a></li>
+                            <li><a href="#">Canada - English</a></li>
+                            <li><a href="#">Canada - Français</a></li>
+                            <li><a href="#">Chile</a></li>
+                            <li><a href="#">Latinoamérica</a></li>
+                            <li><a href="#">México</a></li>
+                            <li><a href="#">United States</a></li>
+                            <li class="title-region">Europe, Middle East and Africa</li>
+                            <li><a href="#">Africa - English</a></li>
+                            <li><a href="#">België - Nederlands</a></li>
+                            <li><a href="#">Belgique - Français</a></li>
+                            <li><a href="#">Belgium - English</a></li>
+                            <li><a href="#">Česká republika</a></li>
+                            <li><a href="#">CIS - English</a></li>
+                            <li><a href="#">Cyprus - English</a></li>
+                            <li><a href="#">Danmark</a></li>
+                            <li><a href="#">Deutschland</a></li>
+                            <li><a href="#">Eesti</a></li>
+                            <li><a href="#">España</a></li>
+                            <li><a href="#">France</a></li>
+                            <li><a href="#">Greece - English</a></li>
+                            <li><a href="#">Ireland</a></li>
+                            <li><a href="#">Israel - English</a></li>
+                            <li><a href="#">Italia</a></li>
+                            <li><a href="#">Latvija</a></li>
+                            <li><a href="#">Lietuva</a></li>
+                            <li><a href="#">Luxembourg - Deutsch</a></li>
+                            <li><a href="#">Luxembourg - English</a></li>
+                            <li><a href="#">Luxembourg - Français</a></li>
+                            <li><a href="#">Magyarország</a></li>
+                            <li><a href="#">Malta - English</a></li>
+                            <li><a href="#">Middle East and North Africa- English</a></li>
+                            <li><a href="#">Nederland</a></li>
+                            <li><a href="#">Norge</a></li>
+                            <li><a href="#">Österreich</a></li>
+                            <li><a href="#">Polska</a></li>
+                            <li><a href="#">Portugal</a></li>
+                            <li><a href="#">România</a></li>
+                            <li><a href="#">Saudi Arabia - English</a></li>
+                            <li><a href="#">Schweiz</a></li>
+                            <li><a href="#">Slovenija</a></li>
+                            <li><a href="#">Slovensko</a></li>
+                            <li><a href="#">Suisse</a></li>
+                            <li><a href="#">Suomi</a></li>
+                            <li><a href="#">Sverige</a></li>
+                            <li><a href="#">Svizzera</a></li>
+                            <li><a href="#">Türkiye</a></li>
+                            <li><a href="#">United Arab Emirates - English</a></li>
+                            <li><a href="#">United Kingdom</a></li>
+                            <li><a href="#">България</a></li>
+                            <li><a href="#">Россия</a></li>
+                            <li><a href="#">СНГ – русский</a></li>
+                            <li><a href="#">Україна</a></li>
+                            <li><a href="#">الإمارات العربية المتحدة</a></li>
+                            <li><a href="#">الشرق الأوسط وشمال أفريقيا - اللغة العربية</a></li>
+                            <li><a href="#">ישראל - עברית</a></li>
+                            <li><a href="#">المملكة العربية السعودية</a></li>
+                            <li class="title-region">Asia Pacific</li>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">Hong Kong SAR of China</a></li>
+                            <li><a href="#">India - English</a></li>
+                            <li><a href="#">New Zealand</a></li>
+                            <li><a href="#">Singapore</a></li>
+                            <li><a href="#">Southeast Asia </a></li>
+                            <li><a href="#">Thailand - English</a></li>
+                            <li><a href="#">ประเทศไทย</a></li>
+                            <li><a href="#">中国</a></li>
+                            <li><a href="#">中國香港特別行政區</a></li>
+                            <li><a href="#">台灣地區</a></li>
+                            <li><a href="#">日本</a></li>
+                            <li><a href="#">한국</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>  
+        </div>
     </footer>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-          modal.style.display = "block";
-        }
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-        </script>
+    <Script src="./JS/app.js"></Script>
 </body>
 
 </html>

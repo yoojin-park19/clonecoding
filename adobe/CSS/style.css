@@ -1,6 +1,8 @@
 * {
   font-family: 'Ubuntu', sans-serif;
 }
+
+
 .btn-buy {
   background-color: #1473e6;
   border-color: #1473e6;
@@ -65,11 +67,11 @@
   transition: background-color .1s ease;
   cursor: pointer;
 }
-.navigation .list-nav-menu .nav-menu {
+.navigation .list-nav-menu .btn {
   padding-top: 30px;
   display: flex;
 }
-.navigation .list-nav-menu .nav-menu::after {
+.navigation .list-nav-menu .btn::after {
   display: flex;
   width: 6px;
   height: 6px;
@@ -390,11 +392,9 @@
 
 /* menu-footer */
 .menu-footer {
-  background-color: #FAFAFA;
   padding: 40px 20px 20px;
   display: flex;
-  justify-content: space-around;
-  flex-grow: 1;
+  justify-content: space-around; 
 }
 .menu-footer .menu .title {
   font-size: 14px;
@@ -497,7 +497,7 @@
   color: #999;
 }
 
-.cont-other .list-sns .btn {
+.cont-other .list-sns .btn-icon {
   width: 20px;
   height: 20px;
   margin-left: 20px;

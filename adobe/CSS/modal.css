@@ -1,7 +1,11 @@
 
-
 /* 1번째 */
-
+.navigation .list-nav-menu .cont-creativity {
+    display: none;
+}
+.navigation .list-nav-menu .cont-creativity.on {
+    display: block;
+}
 .navigation .list-nav-menu .cont-list-creativity {
     display: flex;
     justify-content: space-around;
@@ -11,7 +15,7 @@
     position: absolute;
     left: 0;
     padding: 50px 0;
-    display: none;
+    margin-top: 20px;
 }
 .navigation .list-nav-menu .cont-list-creativity ul {
     background-color: #FAFAFA;
@@ -92,6 +96,12 @@
 }
 
 /* 2번째 */
+.navigation .list-nav-menu .cont-pdf {
+    display: none;
+}
+.navigation .list-nav-menu .cont-pdf.on {
+    display: block;
+}
 .navigation .list-nav-menu .cont-list-pdf {
     display: flex;
     justify-content: space-evenly;
@@ -101,7 +111,7 @@
     position: absolute;
     left: 0;
     padding: 50px 0;
-    display: none;
+    margin-top: 20px;
 }
 .navigation .list-nav-menu .cont-list-pdf ul {
     background-color: #FAFAFA;
@@ -182,7 +192,12 @@
 }
 
 /* 3번째 */
-
+.navigation .list-nav-menu .cont-marketing {
+    display: none;
+}
+.navigation .list-nav-menu .cont-marketing.on {
+    display: block;
+}
 .navigation .list-nav-menu .cont-list-marketing {
     display: flex;
     justify-content: space-evenly;
@@ -192,8 +207,7 @@
     position: absolute;
     left: 0;
     margin-top: 20px;
-    padding-top: 30px;
-    display: none;
+    padding-top: 30px;   
 }
 .navigation .list-nav-menu .cont-list-marketing ul {
     background-color: #FAFAFA;
@@ -258,6 +272,12 @@
 }
 
 /* 4번째 */
+.navigation .list-nav-menu .cont-help {
+    display: none;
+}
+.navigation .list-nav-menu .cont-help.on {
+    display: block;
+}
 .navigation .list-nav-menu .cont-list-help {
     display: flex;
     justify-content: space-evenly;
@@ -267,7 +287,7 @@
     position: absolute;
     left: 0;
     padding: 50px 0;
-    display: none;
+    margin-top: 20px;
 }
 .navigation .list-nav-menu .cont-list-help ul {
     background-color: #FAFAFA;
@@ -347,20 +367,47 @@
     min-width: 1000px;
 } */
 
-.cont-other .modal{
-    background-color: transparent;
-    margin: 50px;
+#backGround {
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 20px;
 }
-.cont-other .modal h4 {
+#modalBox {
+    display: none;
+    width: 80%;
+    height: 500px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+}
+.modalTitle h4 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 15px;
 }
+#btnClose {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background: url(../img/times-solid.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.modalTitle p {
+    margin-bottom: 20px;
+}
 .cont-other .modal .list-region {
     display: grid;
-    grid-template-rows: 1fr;
     grid-template-columns: repeat(5, 1fr);
-}
+    grid-template-rows: repeat(15,28px);
+    grid-auto-flow: column;
+    line-height: 1.5;
+} 
 .modal .list-region li>a {
     color: #1473e6;
     font-size: 14px;
@@ -370,6 +417,17 @@
     color: black;
     line-height: 1.5;
     font-size: 14px;
+    font-weight: 700;
 }
-
-/* ??? 세로로 쌓고 싶어요!! */
+#btnOpen {
+    cursor: pointer;
+    display: flex;
+}
+#btnOpen::before {
+    display: block;
+    content: '';
+    background-image: url(../img/globe-solid.svg);
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+}
