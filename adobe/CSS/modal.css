@@ -359,13 +359,12 @@
     margin: 10px 0 0 40px;
 }
 
-/* 서치바
-.cont-search .input-search {
-    width: 80%;
+/* 서치바 */
+.input-search {
     height: 30px;
     margin: 100px 10px 10px;
-    min-width: 1000px;
-} */
+    display: none;
+}
 
 #backGround {
     position: relative;

@@ -21,17 +21,26 @@
 }
 
 /* navigation */
-.navigation {
+.nav .wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  z-index: 2;
+  transition: transform 0.4s;
+}
+.nav .navigation {
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  position: fixed;
-  background-color: #fff;
+  flex-wrap: wrap;
   width: 100%;
+  padding: 0 20px;
+  background-color: #fff;
   min-height: 65px;
 }
-
-/*  가상요소 썼을때 글자만 내리는 법? position?? */
 .navigation .txt-adobe {
   color: red;
   font-weight: 700;
@@ -56,7 +65,7 @@
   align-items: center;
   height: 65px;
   font-size: 14px;
-  width: 100%;
+  width: 90%;
 }
 .navigation .list-nav-menu li {
   margin-right: 30px;
@@ -89,30 +98,21 @@
   margin-right: 2.25px;
   margin-top: 2px;
 }
-/* .navigation .cont-search {
+.navigation .list-nav-menu .list.pop .btn::after {
+  transform: rotate(225deg)
+}
+.navigation .cont-search {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-} */
+}
 .navigation .btn-search{
   width: 20px;
   height: 20px;
   background-image: url(../img/search.svg);
   margin-right: 10px;
-  position: absolute;
-  top: 28px;
-  right: 100px;
 }
-/* 파란색으로 바뀌는거 도와주세요!! */
-
 .navigation .btn-search:hover {
   cursor: pointer;
-  fill:royalblue;
-}
-.navigation .btn-sign {
-  position: absolute;
-  top: 30px;
-  right: 60px;
+  filter: invert(47%) sepia(54%) saturate(2013%) hue-rotate(185deg) brightness(101%) contrast(91%);
 }
 .navigation .btn-sign:hover {
   color: #1473e6;
