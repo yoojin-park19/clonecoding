@@ -1,0 +1,77 @@
+@media (max-width: 1190px) {
+    .header {
+        display: none;
+    }
+    .medium-header {
+        display: block;
+    }
+    .medium-header .box-header {
+        padding: 50px 0 50px;
+    }
+    .navigation .cont-search {
+        font-size: 12px;
+        display: block;
+        min-width: 85px;
+    }
+    .cont-cloud {
+        display: block;
+    }
+    .cont-cloud article {
+        margin-bottom: 30px;
+    }
+    .cont-student {
+        display: none;
+    }
+    .medium-cont-student {
+        display: block;
+        display: flex;
+        align-items: center;;
+        flex-wrap: wrap;
+        min-width: 100%;
+        width: auto;
+        min-height: 500px;
+        position: relative;
+        box-sizing: border-box;
+    }
+    .medium-cont-student img {
+        width: 100%
+    }
+    .medium-cont-student .box-student {
+        padding: 50px 70px;
+    }
+    .cont-photo {
+        display: block;
+    }
+    .cont-photo article {
+        margin-bottom: 30px;
+    }
+    .cont-included {
+        display: none;
+    }
+    .medium-cont-included {
+        display: block;
+    }
+    .medium-cont-included h2 {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 44px;
+      margin-bottom: 30px;
+      padding: 50px 70px 10px;
+    }
+    .medium-cont-included p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      margin-bottom: 30px;
+      padding: 0 70px;
+    }
+    .medium-cont-included .btn-buy {
+        margin-left: 70px;
+    }
+    .medium-cont-included .btn-buy:hover {
+      background-color: #045FB4;
+    }
+    .footer .first, .footer .second {
+        display: none;
+    }
+}   

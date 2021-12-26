@@ -40,6 +40,13 @@ btns.forEach((btn, index) => {
 })
 
 
+// search-bar 
+let searchBtn = document.querySelector('.btn-search');
+let searchBar = document.querySelector('.inp-wrap')
+
+searchBtn.addEventListener("click", () => {
+  searchBar.classList.toggle('on');
+})
 
 
 
@@ -61,4 +68,31 @@ document.getElementById('btnOpen').addEventListener('click', function () {
     document.getElementById('modalBox').style.display= 'block';
     modalOpen = true;
   }
+})
+
+// max-width: 900 -  메뉴바 오픈
+const menuBtn = document.querySelector('.btn-menu')
+menuBtn.addEventListener("click", function toggleMenu() {
+  document.querySelector('.list-nav-menu').classList.toggle('on')
+})
+
+
+// max-width: 900 -  footer-메뉴바 오픈
+const footerBtns = document.querySelectorAll(".btn-menu-footer");
+const footerMenus = document.querySelectorAll('.menu')
+footerBtns.forEach((footerBtn, index) => {
+  footerBtn.addEventListener("click", function menuBar() {
+  const hasOpen = footerMenus[index].classList.contains("open");
+  if (!hasOpen ) {
+    footerMenus.forEach ((footerMenu) => {
+      footerMenu.classList.remove("open");
+    });
+    footerMenus[index].classList.toggle("open");
+    }
+  else {
+    footerMenus.forEach ((footerMenu) => {
+      footerMenu.classList.remove("open");
+    })
+  }
+})
 })

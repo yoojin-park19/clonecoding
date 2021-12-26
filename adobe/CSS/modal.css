@@ -9,7 +9,6 @@
 .navigation .list-nav-menu .cont-list-creativity {
     display: flex;
     justify-content: space-around;
-    min-width: 1200px;
     background-color: #FAFAFA;
     width: 100%;
     position: absolute;
@@ -105,7 +104,6 @@
 .navigation .list-nav-menu .cont-list-pdf {
     display: flex;
     justify-content: space-evenly;
-    min-width: 1200px;
     background-color: #FAFAFA;
     width: 100%;
     position: absolute;
@@ -201,7 +199,6 @@
 .navigation .list-nav-menu .cont-list-marketing {
     display: flex;
     justify-content: space-evenly;
-    min-width: 1200px;
     background-color: #FAFAFA;
     width: 100%;
     position: absolute;
@@ -281,7 +278,6 @@
 .navigation .list-nav-menu .cont-list-help {
     display: flex;
     justify-content: space-evenly;
-    min-width: 1200px;
     background-color: #FAFAFA;
     width: 100%;
     position: absolute;
@@ -366,6 +362,8 @@
     display: none;
 }
 
+
+/* 언어 모달 */
 #backGround {
     position: relative;
     background-color: #fff;
